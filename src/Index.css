@@ -1,0 +1,150 @@
+.index-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.index-page .first-section {
+    height: 100vh;
+}
+
+.index-page .introduction {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+}
+
+.index-page .name {
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: 'Josefin Slab';
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.index-page .job-title {
+    font-size: 2.5rem;
+    color: rgb(78, 78, 77);
+    font-weight: 400;
+    font-family: 'Josefin Slab';
+    font-weight: 600;
+}
+
+.index-page .elia-pic {
+    width: 35vh;
+}
+
+.index-page .elia-pic img {
+    width: 30vh;
+    border-radius: 50%;
+}
+
+.index-page .about {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-page .about p {
+    font-size: 25px;
+    width: min(85%, 600px);
+}
+
+.index-page .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.index-page .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    
+}
+
+.index-page .projects-title {
+    font-size: 56px;
+}
+
+.index-page .project-title {
+    font-size: 36px;
+}
+
+.index-page .project-description {
+    line-height: 30px;
+    font-size: 20px;
+    max-width: 800px;
+}
+
+.index-page .project-desktop-picture {
+    width: 40%;
+    display: block;
+}
+
+.index-page .project-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.index-page .project-links {
+    display: flex;
+    gap: 30px;
+    margin-bottom: -30px;
+    font-size: 14px;
+    
+}
+
+.index-page .project-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.index-page .project-links a img {
+    width: 36px;
+}
+
+.index-page .project-demo-tabs {
+   width: 100%;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+}
+
+.index-page .project-demo-video {
+    width: 100%;
+    display: block;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+@media (max-width: 900px) {
+    .index-page .name {
+        font-size: 3rem;
+    }
+    index-page .job-title {
+        font-size: 1.5rem;
+    }
+
+    .index-page .introduction {
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .index-page .about p {
+        font-size: 18px;
+    }
+
+    .index-page .project-demo {
+        width: 100%;
+    }
+    
+}
