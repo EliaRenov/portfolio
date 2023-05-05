@@ -6,7 +6,10 @@ import AesopFablesVideo from './assets/AesopFables-demo.mp4'
 import OW2CareerProfileVideo from './assets/ow-career-profile-video.mp4'
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
-
+import Rakefet from './assets/rakefet-sketch.png'
+import Rakefet2 from './assets/rakefet-sketch2.png'
+import Heart from './assets/heart-sketch.png'
+import CatsHeart from './assets/cats-heart.png'
 
 
 const Index = () => {
@@ -31,6 +34,10 @@ const Index = () => {
                 Based in the Upper Galilee, Israel.
                 </p>
             </div>
+            <img src={CatsHeart} alt="Cats with a heart" className="cats-heart" />
+            {/* <img className="heart" src={Heart} alt="" />
+            <img className="cat cat1" src={Rakefet} alt="" />
+            <img className="cat cat2" src={Rakefet2} alt="" /> */}
             </section>
 
             <section className="projects">
