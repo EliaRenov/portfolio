@@ -41,6 +41,7 @@
     width: 30vh;
     border-radius: 50%;
     transition: transform 0.3s;
+    transform: rotate(10deg);
 }
 
 .index-page .elia-pic img:hover {
