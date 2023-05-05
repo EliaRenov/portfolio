@@ -12,15 +12,27 @@ function App() {
 
             <nav className="nav">
                 <ul className="nav-list">
-                    <li className="nav-link">HOME</li>
-                    <li className="nav-link">ABOUT</li>
-                    <li className="nav-link">PROJECTS</li>
+                    <li className="nav-link">
+                      <a href="#about">
+                        ABOUT
+                      </a>
+                    </li>
+                    <li className="nav-link">
+                      <a href="#projects">
+                        PROJECTS
+                      </a>
+                    </li>
+                    <li className="nav-link">
+                      <a href="#contact">
+                        CONTACT
+                      </a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
 
-        
+
       <Index />
     </>
   )

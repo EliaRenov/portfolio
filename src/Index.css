@@ -17,7 +17,7 @@
     gap: 10vw;
 }
 
-.index-page .name {
+.index-page .name-title {
     font-size: 5rem;
     font-weight: 400;
     font-family: 'Josefin Slab';
@@ -149,17 +149,17 @@
     .cat {
         display: none;
     }
-    .index-page .name {
-        font-size: 3rem;
-    }
-    index-page .job-title {
-        font-size: 1.5rem;
-    }
 
     .index-page .introduction {
         flex-direction: column;
         gap: 5vw;
+        margin-top: 40px;
     }
+
+    .index-page .name {
+        font-size: 3rem;
+    }
+
     .index-page .about p {
         font-size: 18px;
     }
@@ -167,5 +167,4 @@
     .index-page .project-demo {
         width: 100%;
     }
-    
 }

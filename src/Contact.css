@@ -1,0 +1,72 @@
+.contact {
+    margin-top: 150px;
+    width: 60%;
+}
+
+.contact-header {
+    font-family: 'Josefin Slab';
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    position: relative;
+}
+
+.contact-form .form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .form-control {
+    width: min(400px, 100%);
+}
+
+.contact-form .form-control.email label, 
+.contact-form .form-control.name label, .contact-form .form-control.message label {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.contact-form .form-control.email input, 
+.contact-form .form-control.name input {
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.contact-form .form-control.message textarea {
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-form .submit-btn {
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border: 3px ridge black;
+    border-radius: 50px;
+}
+
+.contact-form .form-submitted {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(22, 200, 22, 0.427);
+    border-radius: 50px;
+}
+
+.contact-form .form-submitted h3 {
+    font-size: 20rem;
+    color: white;
+}
+
+.contact-form .submit-btn.success {
+    background-color: rgba(22, 200, 22, 0.427);
+}

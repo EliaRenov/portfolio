@@ -1,7 +1,6 @@
 import './Index.css'
 import EliaPic from './assets/elia-pic.png'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
-
 import AesopFablesVideo from './assets/AesopFables-demo.mp4'
 import OW2CareerProfileVideo from './assets/ow-career-profile-video.mp4'
 import LiveDemoIcon from './assets/live-demo-icon.png'
@@ -11,15 +10,17 @@ import Rakefet2 from './assets/rakefet-sketch2.png'
 import Heart from './assets/heart-sketch.png'
 import CatsHeart from './assets/cats-heart.png'
 
+import Contact from './Contact'
+
 
 const Index = () => {
 
     return (
-        <main className="index-page">
+        <main className="index-page" id="about">
             <section className="section first-section">
             <div className="introduction">
             <div className="name-and-job">
-                <h1 className="name">Elia Renov</h1>
+                <h1 className="name-title">Elia Renov</h1>
                 <h3 className="job-title">Frontend Developer</h3>
             </div>
             <div className="elia-pic">
@@ -40,7 +41,7 @@ const Index = () => {
             <img className="cat cat2" src={Rakefet2} alt="" /> */}
             </section>
 
-            <section className="projects">
+            <section id="projects" className="projects">
                 <h2 className="projects-title">
                     Projects
                 </h2>
@@ -79,11 +80,11 @@ const Index = () => {
                         These fables were translated to Hebrew by poet, Shlomo Shapan, and webscraped from the website 'Ben-yehuda Project'.
                     </p>
                     <div className="project-links">
-                        <a href="https://eliarenov.github.io/AesopFables/" className="demo-link">
-                            <img src={LiveDemoIcon} alt="Demo Icon"  target="_blank" />
+                        <a href="https://eliarenov.github.io/AesopFables/" className="demo-link" target="_blank" >
+                            <img src={LiveDemoIcon} alt="Demo Icon" />
                             Live Demo
                         </a>
-                        <a href="https://github.com/EliaRenov/AesopFables" className="repo-link"  target="_blank" >
+                        <a href="https://github.com/EliaRenov/AesopFables" className="repo-link" target="_blank" >
                             <img src={GitHubRepoIcon} alt="Demo Icon" />
                             Repository
                         </a>
@@ -95,8 +96,10 @@ const Index = () => {
                         </video>
                     </div>
                 </div>
-
             </section>
+            
+            <Contact />
+            
         </main>
     )
 }
