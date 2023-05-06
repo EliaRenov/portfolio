@@ -59,9 +59,21 @@
     width: min(85%, 600px);
 }
 
+.contact-me-btn {
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    width: 250px;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 24px;
+    /* font-weight: 500; */
+}
+
 .cats-heart {
     width: 100%;
-    margin-top: 56px;
 }
 
 .index-page .projects {
@@ -77,7 +89,6 @@
     align-items: center;
     gap: 48px;
 }
-
 
 
 

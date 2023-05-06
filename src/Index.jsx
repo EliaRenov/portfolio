@@ -3,10 +3,12 @@ import EliaPic from './assets/elia-pic.png'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
 import AesopFablesVideo from './assets/AesopFables-demo.mp4'
 import OW2CareerProfileVideo from './assets/ow-career-profile-video.mp4'
+import CommsBoard from './assets/comms-board.mp4'
 
 import AesopFablesPhoneVideo from './assets/AesopFablesPhoneDemo.mp4'
 import iPhoneXRDemo from './assets/iphonexrdemo.png'
 import phonedemo from './assets/phonedemo.mp4'
+
 
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
@@ -35,14 +37,16 @@ const Index = () => {
             <img src={EliaPic} alt="Picture of Elia" />
             </div>
             </div>
+            
             <div className="about">
                 <p>
-                I'm Elia, a frontend developer with an affinity for eye-soothing designs. 
+                I'm Elia, a self-taught frontend developer with an affinity for eye-soothing designs. 
                 </p>
                 <p>
                 Based in the Upper Galilee, Israel.
                 </p>
             </div>
+            <a className="contact-me-btn" href="#contact">Contact Me</a>
             <img src={CatsHeart} alt="Cats with a heart" className="cats-heart" />
             {/* <img className="heart" src={Heart} alt="" />
             <img className="cat cat1" src={Rakefet} alt="" />
@@ -107,6 +111,30 @@ const Index = () => {
                         </video>
                     </Link>
                     </div>
+                    </div>
+
+                    <div className="project">
+                    <h3 className="project-title">
+                        Dog Therapy Communication Board
+                    </h3>
+                    <p className="project-description">
+                        A communication board developed in the iOS app 'TouchChat'.
+                        <br />
+                        This board is used weekly by the staff at a school for children with severely weak verbal skills.
+                    </p>
+                    
+                    <div className="project-demo">
+                    <Link to="/comms-board" target="_blank" >
+                        <img className="project-demo-tabs" src={DemoBrowserOverlay} />
+                        <video className="project-demo-video" playsInline autoPlay muted loop>
+                            <source src={CommsBoard} type="video/mp4" />
+                        </video>
+                    </Link>
+                    </div>
+                    </div>
+
+
+
                     {/* <div className="project-phone-demo"> */}
                     
                     {/* <video className="project-phone-demo-video" playsInline autoPlay muted loop>
@@ -119,7 +147,6 @@ const Index = () => {
                             <source src={AesopFablesPhoneVideo} type="video/mp4" />
                         </video> */}
                     {/* </div> */}
-                </div>
             </section>
             
             <Contact />

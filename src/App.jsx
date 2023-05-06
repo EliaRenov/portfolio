@@ -10,6 +10,7 @@ import {
 import Index from './Index'
 import OWCareerProfile from './OWCareerProfile'
 import AesopFables from './AesopFables';
+import CommsBoard from './CommsBoard';
 import './App.css'
 
 const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Index />} />
       <Route path="/ow-career-profile" element={<OWCareerProfile title="Elia Renov - Player Statistics" />} />
       <Route path="/aesops-fables" element={<AesopFables title="Elia Renov - Aesop's Fables" />} />
+      <Route path="/comms-board" element={<CommsBoard title="Elia Renov - Communication Board" />} /> 
     </>
   )
 

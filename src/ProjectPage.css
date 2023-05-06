@@ -84,6 +84,16 @@ img.book-icon {
     color: green;
 }
 
+
+.board-pic img {
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
 @media (max-width: 1200px) {
     .project-page .project-demo {
         width: 90%;
