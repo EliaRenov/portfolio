@@ -1,0 +1,57 @@
+.project-page {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-page .project-title {
+    margin-bottom: 40px;
+    font-size: 48px;
+}
+
+.project-page .project-summary {
+    max-width: 900px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-page .project-demo {
+    width: 40%;
+}
+
+.project-page .project-links {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 2rem;
+}
+
+.project-page .project-ep {
+    
+}
+
+.project-page .project-ep-content {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-page .project-ep-title {
+    margin-top: 40px;
+}
+
+.project-page .reference {
+    text-decoration: underline;
+}
+
+.project-page .overfast-api-pic {
+    width: 30vw;
+    margin: auto;
+}

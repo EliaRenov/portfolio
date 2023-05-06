@@ -3,14 +3,22 @@ import EliaPic from './assets/elia-pic.png'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
 import AesopFablesVideo from './assets/AesopFables-demo.mp4'
 import OW2CareerProfileVideo from './assets/ow-career-profile-video.mp4'
+
+import AesopFablesPhoneVideo from './assets/AesopFablesPhoneDemo.mp4'
+import iPhoneXRDemo from './assets/iphonexrdemo.png'
+import phonedemo from './assets/phonedemo.mp4'
+
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
 import Rakefet from './assets/rakefet-sketch.png'
 import Rakefet2 from './assets/rakefet-sketch2.png'
 import Heart from './assets/heart-sketch.png'
 import CatsHeart from './assets/cats-heart.png'
-
 import Contact from './Contact'
+
+import {
+    Link,
+} from "react-router-dom";
 
 
 const Index = () => {
@@ -52,6 +60,7 @@ const Index = () => {
                     <p className="project-description">
                         This fan-made website uses a public API to gather statistics and emulate players' profiles and statistics, as displayed in the video game 'Overwatch'.
                     </p>
+                    <p className="project-description">Desktop only.</p>
                     <div className="project-links">
                         <a href="https://overwatch-career-profile.netlify.app" className="demo-link" target="_blank">
                             <img src={LiveDemoIcon} alt="Demo Icon" />
@@ -63,10 +72,12 @@ const Index = () => {
                         </a>
                     </div>
                     <div className="project-demo">
+                        <Link to="/ow-career-profile">
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
                             <source src={OW2CareerProfileVideo} type="video/mp4" />
                         </video>
+                    </Link>
                     </div>
                 </div>
 
@@ -94,6 +105,18 @@ const Index = () => {
                         <video className="project-demo-video" playsInline autoPlay muted loop>
                             <source src={AesopFablesVideo} type="video/mp4" />
                         </video>
+                    </div>
+                    <div className="project-phone-demo">
+                    
+                    {/* <video className="project-phone-demo-video" playsInline autoPlay muted loop>
+                            <source src={phonedemo} type="video/mp4" />
+                    </video> */}
+                        
+                        {/* <img className="project-phone-demo-border" src={iPhoneXRDemo} />
+
+                        <video className="project-phone-demo-video" playsInline autoPlay muted loop>
+                            <source src={AesopFablesPhoneVideo} type="video/mp4" />
+                        </video> */}
                     </div>
                 </div>
             </section>

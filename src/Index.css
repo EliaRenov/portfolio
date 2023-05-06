@@ -33,22 +33,17 @@
     font-weight: 600;
 }
 
-.index-page .elia-pic {
-    width: 35vh;
-}
-
 .index-page .elia-pic img {
     width: 30vh;
     border-radius: 50%;
     transition: transform 0.3s;
-    transform: rotate(10deg);
+    align-self: center;
+    justify-self: center;
 }
 
 .index-page .elia-pic img:hover {
     transform: scale(1.05);
 }
-
-
 
 .index-page .about {
     margin-top: 50px;
@@ -68,9 +63,10 @@
 }
 
 .index-page .projects {
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 125px;
 }
 
 .index-page .project {
@@ -80,9 +76,9 @@
     gap: 48px;
 }
 
-
 .index-page .projects-title {
     font-size: 56px;
+    margin-bottom: -90px;
 }
 
 .index-page .project-title {
@@ -100,15 +96,15 @@
     display: block;
 }
 
-.index-page .project-demo {
+.project-demo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 65%;
     transition: 0.3s;
 }
 
-.index-page .project-demo:hover {
+.project-demo:hover {
     transform: scale(1.03);
 }
 
@@ -117,27 +113,26 @@
     gap: 30px;
     margin-bottom: -30px;
     font-size: 14px;
-    
 }
 
-.index-page .project-links a {
+.project-links a {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
 }
 
-.index-page .project-links a img {
+.project-links a img {
     width: 36px;
 }
 
-.index-page .project-demo-tabs {
+.project-demo-tabs {
    width: 100%;
    border-top-right-radius: 20px;
    border-top-left-radius: 20px;
 }
 
-.index-page .project-demo-video {
+.project-demo-video {
     width: 100%;
     display: block;
     border-bottom-right-radius: 20px;
@@ -145,6 +140,27 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.index-page .project-phone-demo {
+    position: relative;
+    height: 400px;
+}
+
+.index-page .project-phone-demo-border {
+    width: 400px;
+    position: absolute;
+    z-index: 2;
+}
+
+.index-page .project-phone-demo-video {
+    width: 150px;
+    position: absolute;
+}
+
+@media (max-width: 1600px) {
+    .index-page .project-demo {
+        width: 65%;
+    }
+}
 
 @media (max-width: 900px) {
     .cat {
@@ -165,7 +181,7 @@
         font-size: 18px;
     }
 
-    .index-page .project-demo {
+    .project-demo {
         width: 100%;
     }
 }
