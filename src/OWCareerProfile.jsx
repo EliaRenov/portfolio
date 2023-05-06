@@ -4,18 +4,21 @@ import OW2CareerProfileVideo from './assets/ow-career-profile-video.mp4'
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
 import OverFastAPI from './assets/OverFastAPI.png'
+import Overwatch2 from './assets/Overwatch2-icon.png'
 import { useEffect } from 'react'
 
 
-const OWCareerProfile = () => {
+const OWCareerProfile = (props) => {
     useEffect(() => {
         document.documentElement.scrollTop = 0
+        document.title = props.title
     }, [])
     
     return (
         <main className="project-page">
                 <h1 className="project-title">
-                    'Overwatch' User Statistics
+                    'Overwatch' Player Statistics
+                    <img className="ow2-icon" src={Overwatch2} alt="Overwatch 2 icon" height="20px" />
                 </h1>
                 <h4 className="project-summary">
                     This fan-made website uses a public API to gather statistics and emulate players' profiles and statistics, as displayed in the video game 'Overwatch'.

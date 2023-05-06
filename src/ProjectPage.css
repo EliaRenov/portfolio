@@ -12,6 +12,20 @@
     font-size: 48px;
 }
 
+img.ow2-icon {
+    display: inline;
+    height: 80px;
+    margin-left: 40px;
+    margin-bottom: -20px;
+}
+
+img.book-icon {
+    display: inline;
+    height: 90px;
+    margin-left: 40px;
+    margin-bottom: -40px;
+}
+
 .project-page .project-summary {
     max-width: 900px;
     font-size: 20px;
@@ -31,6 +45,7 @@
     display: flex;
     gap: 2rem;
 }
+
 
 .project-page .project-ep {
     
@@ -54,4 +69,23 @@
 .project-page .overfast-api-pic {
     width: 30vw;
     margin: auto;
+}
+
+.mashals-data {
+    margin-top: 50px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: black;
+    border: 10px solid green;
+    border-radius: 20px;
+}
+
+.mashals-data {
+    color: green;
+}
+
+@media (max-width: 1200px) {
+    .project-page .project-demo {
+        width: 90%;
+    }
 }

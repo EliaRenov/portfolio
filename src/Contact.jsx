@@ -40,19 +40,19 @@ const Contact = () => {
                 <label htmlFor="name">
                     Name
                 </label>
-                <input id="name" type="text" onChange={e => setName(e.target.value)} />
+                <input id="name" type="text" value={name} onChange={e => setName(e.target.value)} />
                 </div>
                 <div className="form-control email" >
                 <label htmlFor="email">
                     Email
                 </label>
-                <input id="email" type="text" onChange={e => setEmail(e.target.value)}/>
+                <input id="email" type="text" value={email} onChange={e => setEmail(e.target.value)}/>
                 </div>
                 <div className="form-control message" >
                 <label htmlFor="message">
                     Message
                 </label>
-                <textarea id="message" rows="10" onInput={e => setMessage(e.target.value)
+                <textarea id="message" rows="10" value={message} onInput={e => setMessage(e.target.value)
                 } />
                 </div>
                 {isSubmitted && <button disabled={submitting} type="submit" className="submit-btn success">

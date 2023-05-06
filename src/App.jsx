@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
     createBrowserRouter,
     createRoutesFromElements,
@@ -9,20 +9,36 @@ import {
 } from "react-router-dom";
 import Index from './Index'
 import OWCareerProfile from './OWCareerProfile'
+import AesopFables from './AesopFables';
 import './App.css'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-
       <Route path="/" element={<Index />} />
-      <Route path="/ow-career-profile" element={<OWCareerProfile />} />
+      <Route path="/ow-career-profile" element={<OWCareerProfile title="Elia Renov - Player Statistics" />} />
+      <Route path="/aesops-fables" element={<AesopFables title="Elia Renov - Aesop's Fables" />} />
     </>
   )
 
 )
 
 function App() {
+
+  const link = window.location.href
+
+  if (link.includes('#')) {
+    useEffect(() => {
+      setTimeout(() => {
+        const index = link.indexOf('#')
+        const jumpToHash = link.slice(index)
+        const jumpToElement = document.querySelector(jumpToHash)
+
+        jumpToElement.scrollIntoView({ behavior: 'instant'})
+      })
+      })
+    }
+
   return (
     <>
       <header className="header">

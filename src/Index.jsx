@@ -48,14 +48,13 @@ const Index = () => {
             <img className="cat cat1" src={Rakefet} alt="" />
             <img className="cat cat2" src={Rakefet2} alt="" /> */}
             </section>
-
             <section id="projects" className="projects">
                 <h2 className="projects-title">
                     Projects
                 </h2>
                 <div className="project">
                     <h3 className="project-title">
-                        'Overwatch' User Statistics
+                        'Overwatch' Player Statistics
                     </h3>
                     <p className="project-description">
                         This fan-made website uses a public API to gather statistics and emulate players' profiles and statistics, as displayed in the video game 'Overwatch'.
@@ -72,7 +71,7 @@ const Index = () => {
                         </a>
                     </div>
                     <div className="project-demo">
-                        <Link to="/ow-career-profile">
+                        <Link to="/ow-career-profile" target="_blank" >
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
                             <source src={OW2CareerProfileVideo} type="video/mp4" />
@@ -101,12 +100,14 @@ const Index = () => {
                         </a>
                     </div>
                     <div className="project-demo">
+                    <Link to="/aesops-fables" target="_blank" >
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
                             <source src={AesopFablesVideo} type="video/mp4" />
                         </video>
+                    </Link>
                     </div>
-                    <div className="project-phone-demo">
+                    {/* <div className="project-phone-demo"> */}
                     
                     {/* <video className="project-phone-demo-video" playsInline autoPlay muted loop>
                             <source src={phonedemo} type="video/mp4" />
@@ -117,7 +118,7 @@ const Index = () => {
                         <video className="project-phone-demo-video" playsInline autoPlay muted loop>
                             <source src={AesopFablesPhoneVideo} type="video/mp4" />
                         </video> */}
-                    </div>
+                    {/* </div> */}
                 </div>
             </section>
             
