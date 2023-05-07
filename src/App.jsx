@@ -44,7 +44,9 @@ function App() {
   return (
     <>
       <header className="header">
+        <a href="/">
             <h1 className="portfolio-title">Portfolio</h1>
+        </a>
             <nav className="nav">
                 <ul className="nav-list">
                     <li className="nav-link">

@@ -39,10 +39,18 @@ const CommsBoard = (props) => {
                     </h2>
                     <h4 className="project-ep-content project-summary">
                         These children have a hard time understanding others and conveying their needs and wants. 
+                        The communication board helps the children:
                         <br />
-                        By using the communication board, the children can see pictures of what activities they can do with the dogs.
                         <br />
-                        They can also clearly communicate to the staff what they would like to do.
+                        * Understand the different activities they can do with the dogs 
+                        <br />
+                        * Communicate to the staff what activies they would like to do
+                        <br />
+                        * Strengthen communication and social tools
+                        <br />
+                        * Overcoming fears (fear of dogs)
+                        <br />
+                        * Build personal confidence
                     </h4>
                 </section>
                 <section className="project-ep">
