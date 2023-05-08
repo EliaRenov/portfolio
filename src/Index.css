@@ -79,7 +79,8 @@
     border: 1px solid black;
     border-radius: 2px;
     font-size: 24px;
-    /* font-weight: 500; */
+    position: relative;
+    z-index: 5;
 }
 
 .cats-heart {
