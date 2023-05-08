@@ -12,9 +12,9 @@ import phonedemo from './assets/phonedemo.mp4'
 
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
-import Rakefet from './assets/rakefet-sketch.png'
-import Rakefet2 from './assets/rakefet-sketch2.png'
-import Heart from './assets/heart-sketch.png'
+import Skills from './assets/skills.png'
+
+
 import CatsHeart from './assets/cats-heart.png'
 import Contact from './Contact'
 
@@ -32,6 +32,7 @@ const Index = () => {
             <div className="name-and-job">
                 <h1 className="name-title">Elia Renov</h1>
                 <h3 className="job-title">Frontend Developer</h3>
+                <img className="skills" src={Skills} alt="skills" />
             </div>
             <div className="elia-pic">
             <img src={EliaPic} alt="Picture of Elia" />

@@ -7,7 +7,6 @@
 }
 
 .index-page .first-section {
-    height: 95vh;
     border-bottom: 1px solid black;
     margin-bottom: 50px;
 }
@@ -17,6 +16,12 @@
     align-items: center;
     justify-content: center;
     gap: 10vw;
+}
+
+.index-page .introduction .name-and-job {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .index-page .name-title {
@@ -33,6 +38,11 @@
     font-weight: 400;
     font-family: 'Josefin Slab';
     font-weight: 600;
+}
+
+.index-page .introduction img.skills {
+    width: min(500px);
+    margin: auto;
 }
 
 .index-page .elia-pic img {
@@ -90,8 +100,6 @@
     gap: 48px;
 }
 
-
-
 .index-page .project:last-of-type {
     margin-bottom: 100px;
 }
@@ -132,7 +140,7 @@
 .index-page .project-links {
     display: flex;
     gap: 30px;
-    margin-bottom: -30px;
+    /* margin-bottom: -30px; */
     font-size: 14px;
 }
 
@@ -184,10 +192,6 @@
 }
 
 @media (max-width: 900px) {
-    .cat {
-        display: none;
-    }
-
     .index-page .introduction {
         flex-direction: column;
         gap: 5vw;
@@ -202,7 +206,35 @@
         font-size: 18px;
     }
 
+    .index-page .projects {
+        gap: 100px;
+    }
+
     .project-demo {
+        width: 100%;
+    }
+
+    .contact-me-btn {
+        margin-bottom: 40px;
+    }
+
+    .cats-heart {
+        margin-bottom: 20px;
+    }
+
+    .first-section {
+        margin-top: 20px;
+    }
+    .index-page .project {
+        gap: 20px;
+    }
+    .contact {
+        margin-top: 40px;
+    }
+    .index-page .project-links {
+        margin-bottom: 0;
+    }
+    .index-page .introduction img.skills {
         width: 100%;
     }
 }

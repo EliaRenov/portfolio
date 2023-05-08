@@ -1,6 +1,8 @@
 .contact {
     margin-top: 150px;
     width: 60%;
+    scroll-margin-top: 6.2rem;
+    margin-bottom: 100px;
 }
 
 .contact-header {
@@ -37,21 +39,27 @@
     height: 40px;
     font-size: 1.2rem;
     border-radius: 5px;
+    outline: 2px solid grey;
+    border: none;
+    text-indent: 10px;
 }
 
 .contact-form .form-control.message textarea {
     font-size: 1.2rem;
     border-radius: 5px;
     padding: 10px;
+    outline: 2px solid grey;
+    border: none;
 }
 
 .contact-form .submit-btn {
-    width: 400px;
+    width: min(130%, 400px);
     height: 50px;
     background-color: transparent;
     border: none;
     border: 3px ridge black;
     border-radius: 50px;
+    font-size: 1.3rem;
 }
 
 .contact-form .form-submitted {
@@ -69,4 +77,15 @@
 
 .contact-form .submit-btn.success {
     background-color: rgba(22, 200, 22, 0.427);
+}
+
+@media (max-width: 900px) {
+    .contact {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .contact-form .form-control {
+        width: 120%;
+    }
 }
