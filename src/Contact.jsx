@@ -52,7 +52,7 @@ const Contact = () => {
                 <label htmlFor="message">
                     Message
                 </label>
-                <textarea id="message" rows="10" value={message} onInput={e => setMessage(e.target.value)
+                <textarea id="message" rows="5" value={message} onInput={e => setMessage(e.target.value)
                 } />
                 </div>
                 {isSubmitted && <button disabled={submitting} type="submit" className="submit-btn success">

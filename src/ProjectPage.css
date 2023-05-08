@@ -46,11 +46,6 @@ img.book-icon {
     gap: 2rem;
 }
 
-
-.project-page .project-ep {
-    
-}
-
 .project-page .project-ep-content {
     /* display: flex; */
     flex-direction: column;
