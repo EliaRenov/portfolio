@@ -1,6 +1,6 @@
 import './ProjectPage.css'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
-import OW2CareerProfileVideo from './assets/ow-career-profile-video.mp4'
+import OW2CareerProfileVideo from './assets/ow-career-profile-video.webm'
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
 import OverFastAPI from './assets/OverFastAPI.png'
@@ -39,7 +39,7 @@ const OWCareerProfile = (props) => {
                     <div className="project-demo">
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
-                            <source src={OW2CareerProfileVideo} type="video/mp4" />
+                            <source src={OW2CareerProfileVideo} type="video/webm" />
                         </video>
                     </div>
                 <section className="project-ep">

@@ -1,6 +1,6 @@
 import './ProjectPage.css'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
-import AesopFablesVideo from './assets/AesopFables-demo.mp4'
+import AesopFablesVideo from './assets/AesopFables-demo.webm'
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
 import OverFastAPI from './assets/OverFastAPI.png'
@@ -2902,8 +2902,6 @@ const AesopFables = (props) => {
             ]
         ]
     }
-
-    
     
     return (
         <main className="project-page">
@@ -2929,7 +2927,7 @@ const AesopFables = (props) => {
                     <div className="project-demo">
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
-                            <source src={AesopFablesVideo} type="video/mp4" />
+                            <source src={AesopFablesVideo} type="video/webm" />
                         </video>                    </div>
                 <section className="project-ep">
                     <h2 className="project-ep-title">

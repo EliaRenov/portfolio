@@ -2,10 +2,8 @@ import './ProjectPage.css'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
-import CommsBoardVideo from './assets/comms-board.mp4'
-import Board1 from './assets/board-1.png'
-import Board2 from './assets/board-2.png'
-import Board3 from './assets/board-3.png'
+import CommsBoardVideo from './assets/comms-board.webm'
+import Board from './assets/board.png'
 
 import { useEffect } from 'react'
 
@@ -30,7 +28,7 @@ const CommsBoard = (props) => {
                     <div className="project-demo">
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
-                            <source src={CommsBoardVideo} type="video/mp4" />
+                            <source src={CommsBoardVideo} type="video/webm" />
                         </video>
                     </div>
                 <section className="project-ep">
@@ -59,7 +57,7 @@ const CommsBoard = (props) => {
                     </h2>
                     <h4 className="project-ep-content project-summary">
                         <div className="board-pic">
-                            <img src={Board3} alt="Communication board" />
+                            <img src={Board} alt="Communication board" />
                         </div>
                     </h4>
                 </section>

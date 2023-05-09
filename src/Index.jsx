@@ -1,10 +1,10 @@
 import './Index.css'
-import EliaPic from './assets/elia-pic.png'
+import EliaPic from './assets/elia-pic.webp'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
-import AesopFablesVideo from './assets/AesopFables-demo.mp4'
-import OW2CareerProfileVideo from './assets/ow-career-profile-video.mp4'
-import CommsBoard from './assets/comms-board.mp4'
+import AesopFablesVideo from './assets/AesopFables-demo.webm'
+import OW2CareerProfileVideo from './assets/ow-career-profile-video.webm'
 
+import CommsBoard from './assets/comms-board.webm'
 import AesopFablesPhoneVideo from './assets/AesopFablesPhoneDemo.mp4'
 import iPhoneXRDemo from './assets/iphonexrdemo.png'
 import phonedemo from './assets/phonedemo.mp4'
@@ -15,7 +15,7 @@ import GitHubRepoIcon from './assets/repo-icon.png'
 import Skills from './assets/skills.png'
 
 
-import CatsHeart from './assets/cats-heart.png'
+import CatsHeart from './assets/cats-heart.webp'
 import Contact from './Contact'
 
 import {
@@ -79,7 +79,7 @@ const Index = () => {
                         <Link to="/ow-career-profile" target="_blank" >
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
-                            <source src={OW2CareerProfileVideo} type="video/mp4" />
+                            <source src={OW2CareerProfileVideo} type="video/webm" />
                         </video>
                     </Link>
                     </div>
@@ -108,7 +108,7 @@ const Index = () => {
                     <Link to="/aesops-fables" target="_blank" >
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
-                            <source src={AesopFablesVideo} type="video/mp4" />
+                            <source src={AesopFablesVideo} type="video/webm" />
                         </video>
                     </Link>
                     </div>
@@ -128,7 +128,7 @@ const Index = () => {
                     <Link to="/comms-board" target="_blank" >
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
-                            <source src={CommsBoard} type="video/mp4" />
+                            <source src={CommsBoard} type="video/webm" />
                         </video>
                     </Link>
                     </div>
