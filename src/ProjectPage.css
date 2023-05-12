@@ -26,6 +26,12 @@ img.book-icon {
     margin-bottom: -40px;
 }
 
+img.brush-icon {
+    display: inline;
+    height: 90px;
+    margin-bottom: -30px;
+}
+
 .project-page .project-summary {
     max-width: 900px;
     font-size: 20px;
@@ -47,7 +53,6 @@ img.book-icon {
 }
 
 .project-page .project-ep-content {
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;

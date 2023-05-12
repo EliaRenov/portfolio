@@ -3,6 +3,7 @@ import EliaPic from './assets/elia-pic.webp'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
 import AesopFablesVideo from './assets/AesopFables-demo.webm'
 import OW2CareerProfileVideo from './assets/ow-career-profile-video.webm'
+import ColorPickerVideo from './assets/color-picker-demo.webm'
 
 import CommsBoard from './assets/comms-board.webm'
 import AesopFablesPhoneVideo from './assets/AesopFablesPhoneDemo.mp4'
@@ -49,9 +50,6 @@ const Index = () => {
             </div>
             <a className="contact-me-btn" href="#contact">Contact Me</a>
             <img src={CatsHeart} alt="Cats with a heart" className="cats-heart" />
-            {/* <img className="heart" src={Heart} alt="" />
-            <img className="cat cat1" src={Rakefet} alt="" />
-            <img className="cat cat2" src={Rakefet2} alt="" /> */}
             </section>
             <section id="projects" className="projects">
                 <h2 className="projects-title">
@@ -113,6 +111,38 @@ const Index = () => {
                     </Link>
                     </div>
                     </div>
+                    
+
+                    {/* COLOR PICKER */}
+                    
+                <div className="project">
+                    <h3 className="project-title">
+                        Color Picker
+                    </h3>
+                    <p className="project-description">
+                        A list of 1302 named colors.
+                        <br />
+                        Lock in your favourite colors and prepare a beautiful palette for your next design.
+                    </p>
+                    <div className="project-links">
+                        <a href="https://elia-color-picker.netlify.app/" className="demo-link" target="_blank" >
+                            <img src={LiveDemoIcon} alt="Demo Icon" />
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/EliaRenov/color-picker" className="repo-link" target="_blank" >
+                            <img src={GitHubRepoIcon} alt="Demo Icon" />
+                            Repository
+                        </a>
+                    </div>
+                    <div className="project-demo">
+                    <Link to="/color-picker" target="_blank" >
+                        <img className="project-demo-tabs" src={DemoBrowserOverlay} />
+                        <video className="project-demo-video" playsInline autoPlay muted loop>
+                            <source src={ColorPickerVideo} type="video/webm" />
+                        </video>
+                    </Link>
+                    </div>
+                    </div>
 
                     <div className="project">
                     <h3 className="project-title">
@@ -133,21 +163,6 @@ const Index = () => {
                     </Link>
                     </div>
                     </div>
-
-
-
-                    {/* <div className="project-phone-demo"> */}
-                    
-                    {/* <video className="project-phone-demo-video" playsInline autoPlay muted loop>
-                            <source src={phonedemo} type="video/mp4" />
-                    </video> */}
-                        
-                        {/* <img className="project-phone-demo-border" src={iPhoneXRDemo} />
-
-                        <video className="project-phone-demo-video" playsInline autoPlay muted loop>
-                            <source src={AesopFablesPhoneVideo} type="video/mp4" />
-                        </video> */}
-                    {/* </div> */}
             </section>
             
             <Contact />
