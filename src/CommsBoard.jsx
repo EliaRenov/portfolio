@@ -1,7 +1,5 @@
 import './ProjectPage.css'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
-import LiveDemoIcon from './assets/live-demo-icon.png'
-import GitHubRepoIcon from './assets/repo-icon.png'
 import CommsBoardVideo from './assets/comms-board.webm'
 import Board from './assets/board.png'
 

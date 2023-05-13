@@ -1,6 +1,7 @@
 import './ProjectPage.css'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
 import AesopFablesVideo from './assets/AesopFables-demo.webm'
+import AesopFablesPhoneVideo from './assets/aesop-phone-demo.webm'
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
 import BookIcon from './assets/book-icon.png'
@@ -38,7 +39,13 @@ const AesopFables = (props) => {
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
                             <source src={AesopFablesVideo} type="video/webm" />
-                        </video>                    </div>
+                        </video>                    
+                        
+                        <video 
+                        className="project-phone-demo-video" playsInline autoPlay muted loop>
+                            <source src={AesopFablesPhoneVideo} type="video/webm" />
+                        </video>
+                        </div>
                 <section className="project-ep">
                     <h2 className="project-ep-title">
                         Why?

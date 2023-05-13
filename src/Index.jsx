@@ -9,6 +9,10 @@ import CommsBoard from './assets/comms-board.webm'
 import AesopFablesPhoneVideo from './assets/aesop-phone-demo.webm'
 import ColorPickerPhoneVideo from './assets/color-picker-phone-demo.webm'
 
+import BookIcon from './assets/book-icon.png'
+import BrushIcon from './assets/brush-icon.webp'
+import Overwatch2 from './assets/Overwatch2-icon.png'
+
 
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
@@ -57,6 +61,7 @@ const Index = () => {
                 <div className="project">
                     <h3 className="project-title">
                         'Overwatch' Player Statistics
+                        <img className="ow2-icon" src={Overwatch2} alt="Overwatch 2 icon" height="20px" />
                     </h3>
                     <p className="project-description">
                         This fan-made website uses a public API to gather statistics and emulate players' profiles and statistics, as displayed in the video game 'Overwatch'.
@@ -85,6 +90,7 @@ const Index = () => {
                 <div className="project">
                     <h3 className="project-title">
                         Aesop's Fables
+                        <img className="book-icon" src={BookIcon} alt="Book icon" height="20px" />
                     </h3>
                     <p className="project-description">
                         Aesop's Fables is a website containing hundreds of fables credited to ancient Greek fabulist and storyteller Aesop.
@@ -118,12 +124,12 @@ const Index = () => {
                     
                 <div className="project">
                     <h3 className="project-title">
-                        Color Picker
+                        Color Picker <img className="brush-icon" src={BrushIcon} alt="Brush icon" height="20px" />
                     </h3>
                     <p className="project-description">
-                        A list of 1302 named colors.
-                        <br />
-                        Lock in your favourite colors and prepare a beautiful palette for your next design.
+                    Scroll through hundreds of colors and hues by clicking space.
+                    <br />
+	                Find complementary shades by locking specific colors; allowing them to persist between new palettes.
                     </p>
                     <div className="project-links">
                         <a href="https://elia-color-picker.netlify.app/" className="demo-link" target="_blank" >
