@@ -42,7 +42,7 @@ const Index = () => {
             
             <div className="about">
                 <p>
-                I'm Elia, a self-taught frontend developer with an affinity for eye-soothing designs. 
+                I'm Elia, a self-taught frontend developer with a strong appreciation for UX. 
                 </p>
                 <p>
                 Based in the Upper Galilee, Israel.
