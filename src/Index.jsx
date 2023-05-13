@@ -6,9 +6,8 @@ import OW2CareerProfileVideo from './assets/ow-career-profile-video.webm'
 import ColorPickerVideo from './assets/color-picker-demo.webm'
 
 import CommsBoard from './assets/comms-board.webm'
-import AesopFablesPhoneVideo from './assets/AesopFablesPhoneDemo.mp4'
-import iPhoneXRDemo from './assets/iphonexrdemo.png'
-import phonedemo from './assets/phonedemo.mp4'
+import AesopFablesPhoneVideo from './assets/aesop-phone-demo.webm'
+import ColorPickerPhoneVideo from './assets/color-picker-phone-demo.webm'
 
 
 import LiveDemoIcon from './assets/live-demo-icon.png'
@@ -108,12 +107,14 @@ const Index = () => {
                         <video className="project-demo-video" playsInline autoPlay muted loop>
                             <source src={AesopFablesVideo} type="video/webm" />
                         </video>
+                        
+                        <video 
+                        className="project-phone-demo-video" playsInline autoPlay muted loop>
+                            <source src={AesopFablesPhoneVideo} type="video/webm" />
+                        </video>
                     </Link>
                     </div>
                     </div>
-                    
-
-                    {/* COLOR PICKER */}
                     
                 <div className="project">
                     <h3 className="project-title">
@@ -139,6 +140,11 @@ const Index = () => {
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
                             <source src={ColorPickerVideo} type="video/webm" />
+                        </video>
+
+                        <video 
+                        className="project-phone-demo-video" playsInline autoPlay muted loop>
+                            <source src={ColorPickerPhoneVideo} type="video/webm" />
                         </video>
                     </Link>
                     </div>

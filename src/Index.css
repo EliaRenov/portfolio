@@ -131,8 +131,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 65%;
+    width: 50%;
     transition: 0.3s;
+    position: relative;
 }
 
 .project-demo:hover {
@@ -166,25 +167,19 @@
 .project-demo-video {
     width: 100%;
     display: block;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.index-page .project-phone-demo {
-    position: relative;
-    height: 400px;
-}
-
-.index-page .project-phone-demo-border {
-    width: 400px;
+.project-phone-demo-video {
+    width: 20%;
+    display: block;
+    border-radius: 15px;
+    border: 3px solid black;
     position: absolute;
-    z-index: 2;
-}
-
-.index-page .project-phone-demo-video {
-    width: 150px;
-    position: absolute;
+    bottom: -10%;
+    right: 5%;
 }
 
 @media (max-width: 1600px) {
@@ -238,5 +233,10 @@
     }
     .index-page .introduction img.skills {
         width: 100%;
+    }
+
+    .project-phone-demo-video {
+        width: 25%;
+        bottom: -30%;
     }
 }
