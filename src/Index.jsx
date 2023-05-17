@@ -13,7 +13,6 @@ import BookIcon from './assets/book-icon.png'
 import BrushIcon from './assets/brush-icon.webp'
 import Overwatch2 from './assets/Overwatch2-icon.png'
 
-
 import LiveDemoIcon from './assets/live-demo-icon.png'
 import GitHubRepoIcon from './assets/repo-icon.png'
 import Skills from './assets/skills.png'
