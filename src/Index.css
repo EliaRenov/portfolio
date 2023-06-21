@@ -8,6 +8,7 @@
 
 .index-page .first-section {
     border-bottom: 1px solid black;
+    padding-bottom: 50px;
     margin-bottom: 50px;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .index-page .introduction img.skills {
-    width: 350px;
+    width: 400px;
     margin: auto;
 }
 
@@ -54,7 +55,7 @@
 }
 
 .index-page .elia-pic img:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 
 .index-page .about {

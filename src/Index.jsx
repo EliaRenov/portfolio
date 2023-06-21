@@ -3,6 +3,7 @@ import EliaPic from './assets/elia-pic.webp'
 import DemoBrowserOverlay from './assets/modern-browser-tabs.png'
 import AesopFablesVideo from './assets/AesopFables-demo.webm'
 import OW2CareerProfileVideo from './assets/ow-career-profile-video.webm'
+import OW2CareerProfileVideoMobile from './assets/overwatch-mobile-demo.webm'
 import ColorPickerVideo from './assets/color-picker-demo.webm'
 
 import CommsBoard from './assets/comms-board.webm'
@@ -34,7 +35,7 @@ const Index = () => {
             <div className="introduction">
             <div className="name-and-job">
                 <h1 className="name-title">Elia Renov</h1>
-                <h3 className="job-title">Frontend Developer</h3>
+                <h3 className="job-title">Web Developer</h3>
                 <img className="skills" src={Skills} alt="skills" />
             </div>
             <div className="elia-pic">
@@ -43,15 +44,15 @@ const Index = () => {
             </div>
             
             <div className="about">
-                <p>
+                {/* <p>
                 I'm Elia, a self-taught frontend developer with a strong appreciation for UX. 
-                </p>
-                <p>
+                </p> */}
+                {/* <p>
                 Based in the Upper Galilee, Israel.
-                </p>
+                </p> */}
             </div>
             <a className="contact-me-btn" href="#contact">Contact Me</a>
-            <img src={CatsHeart} alt="Cats with a heart" className="cats-heart" />
+            {/* <img src={CatsHeart} alt="Cats with a heart" className="cats-heart" /> */}
             </section>
             <section id="projects" className="projects">
                 <h2 className="projects-title">
@@ -65,7 +66,6 @@ const Index = () => {
                     <p className="project-description">
                         This fan-made website uses a public API to gather statistics and emulate players' profiles and statistics, as displayed in the video game 'Overwatch'.
                     </p>
-                    <p className="project-description">Desktop only.</p>
                     <div className="project-links">
                         <a href="https://overwatch-career-profile.netlify.app" className="demo-link" target="_blank">
                             <img src={LiveDemoIcon} alt="Demo Icon" />
@@ -81,6 +81,11 @@ const Index = () => {
                         <img className="project-demo-tabs" src={DemoBrowserOverlay} />
                         <video className="project-demo-video" playsInline autoPlay muted loop>
                             <source src={OW2CareerProfileVideo} type="video/webm" />
+                        </video>
+
+                        <video 
+                        className="project-phone-demo-video" playsInline autoPlay muted loop>
+                            <source src={OW2CareerProfileVideoMobile} type="video/webm" />
                         </video>
                     </Link>
                     </div>
